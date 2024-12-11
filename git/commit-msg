@@ -6,7 +6,7 @@ commit_msg=$(cat "$commit_msg_file")
 pattern="^ASTONJS-[0-9]+ \[(feat|fix|chore)\]: .+"
 
 if ! echo "$commit_msg" | grep -qE "$pattern" then
-  echo "Ошибка: сообщение коммита должно соответствовать паттерну: 'ASTONJS-1 [feat/fix/chore]: commit msg'"
+  echo "Ошибка: соощение коммита должно соответствовать паттерну: 'ASTONJS-1 [feat/fix/chore]: commit msg'"
   exit 1
 fi
 
